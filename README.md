@@ -32,3 +32,12 @@ Atualizações:
 - Home com menções a Pai Enoque/Enoc — Metatron, Ifé, Krishna e Shiva, Pai Ogum, mundo astral e campo consciencial projetivo.
 - Citação a Waldo Vieira na seção Sobre o Autor.
 - Página “Mundos e Mundos” com aviso editorial, Mestres de Aeon Primevo, campo astral/projetivo, Ifé/Ifá/Orunmilá, mundos de travessia, Freud, Lacan, Sheldrake e fontes externas.
+
+
+## Versão 3
+
+Atualizações:
+- Adicionado favicon próprio do Aeon Primevo.
+- Inseridas referências de favicon em `index.html` e `mundos-e-mundos.html`.
+- Incluído conjunto completo de favicon da Jus 9 Tecnologia Jurídica em `assets/images/jus9-favicons/`.
+- Incluído `favicon.ico`, PNG 16/32/48/180/192/512 e orientações de instalação.
