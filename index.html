@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aeon Primevo | Filho do Tempo em Carne</title>
+  <meta name="description" content="Site autoral de Aeon Primevo, com livro gratuito, Linha Histórica Consciencial, Orai por Nós e ponte com a Jus 9 Tecnologia Jurídica." />
+  <style>
+    :root {
+      --bg-main: #080D11;
+      --bg-deep: #122532;
+      --bg-alt: #284050;
+      --aeon-blue: #295981;
+      --aeon-blue-light: #3769AA;
+      --aeon-cyan: #6EBFE3;
+      --gold-main: #C19641;
+      --gold-light: #EDCC81;
+      --gold-bronze: #9C7E49;
+      --emerald-jus9: #1F8E73;
+      --emerald-light: #2FA089;
+      --warm-brown: #7C5D48;
+      --warm-deep: #47321B;
+      --text-main: #D9DDE8;
+      --text-soft: #B9C2D3;
+      --line: rgba(193, 150, 65, 0.32);
+      --glass: rgba(8, 13, 17, 0.72);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text-main);
+      background:
+        radial-gradient(circle at top center, rgba(55, 105, 170, 0.18), transparent 35rem),
+        linear-gradient(180deg, #04080d 0%, #080D11 45%, #101a20 100%);
+      line-height: 1.65;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    strong { color: var(--gold-light); }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(4, 8, 13, 0.90);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0.72rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      min-width: 245px;
+    }
+
+    .brand-mark {
+      width: 56px;
+      height: 56px;
+      border: 1px solid var(--gold-main);
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(circle, rgba(47, 160, 137, .25), rgba(8, 13, 17, .85));
+      box-shadow: 0 0 22px rgba(31, 142, 115, .24);
+      overflow: hidden;
+    }
+
+    .brand-mark img { width: 100%; height: 100%; object-fit: cover; }
+
+    .brand-title {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-title strong {
+      color: var(--gold-light);
+      font-size: 1.25rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .brand-title span {
+      color: var(--text-soft);
+      font-size: .74rem;
+      letter-spacing: .03em;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+      font-size: .9rem;
+      color: var(--text-soft);
+      white-space: nowrap;
+    }
+
+    nav a:hover { color: var(--gold-light); }
+
+    .enter-btn,
+    .btn,
+    .btn-secondary {
+      border: 1px solid var(--gold-main);
+      border-radius: 999px;
+      padding: .72rem 1.25rem;
+      color: var(--gold-light);
+      background: rgba(8, 13, 17, .55);
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      font-size: .76rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .55rem;
+      transition: .25s ease;
+      white-space: nowrap;
+    }
+
+    .btn:hover,
+    .btn-secondary:hover,
+    .enter-btn:hover {
+      transform: translateY(-2px);
+      background: rgba(193, 150, 65, .12);
+      box-shadow: 0 0 22px rgba(193, 150, 65, .18);
+    }
+
+    .btn-secondary {
+      border-color: rgba(47, 160, 137, .9);
+      color: #b7ffe8;
+      box-shadow: 0 0 22px rgba(31, 142, 115, .14);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 780px;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(4, 8, 13, .82) 0%, rgba(4, 8, 13, .40) 48%, rgba(4, 8, 13, .70) 100%),
+        url("assets/images/hero-aeon-primevo.jpg") center/cover;
+      filter: saturate(1.08) brightness(.84);
+      z-index: -2;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 60% 45%, rgba(237, 204, 129, .20), transparent 22rem),
+        radial-gradient(circle at 72% 65%, rgba(31, 142, 115, .12), transparent 24rem),
+        linear-gradient(180deg, transparent 0%, rgba(8, 13, 17, .97) 94%);
+      z-index: -1;
+    }
+
+    .hero-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 7rem 1.25rem 3.5rem;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--emerald-light);
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: .76rem;
+      margin-bottom: 1rem;
+    }
+
+    h1, h2, h3 { line-height: 1.12; margin: 0; }
+
+    h1 {
+      font-size: clamp(3rem, 7vw, 6.6rem);
+      color: var(--gold-light);
+      letter-spacing: .05em;
+      text-shadow: 0 0 28px rgba(193, 150, 65, .25);
+    }
+
+    .subtitle {
+      margin-top: .65rem;
+      color: var(--text-main);
+      font-size: clamp(1.15rem, 2.25vw, 1.95rem);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .hero-text {
+      max-width: 700px;
+      margin-top: 2rem;
+      color: var(--text-soft);
+      font-size: 1.12rem;
+    }
+
+    .hero-actions {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .9rem;
+    }
+
+    .hero-panel {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 1rem;
+      background: rgba(8, 13, 17, .50);
+      box-shadow: 0 0 55px rgba(31, 142, 115, .16);
+    }
+
+    .hero-panel img {
+      border-radius: 20px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      width: 100%;
+      opacity: .92;
+    }
+
+    .cards {
+      max-width: 1280px;
+      margin: -5rem auto 0;
+      padding: 0 1.25rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      position: relative;
+      z-index: 3;
+    }
+
+    .card,
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(13, 28, 41, .88), rgba(8, 13, 17, .88));
+      padding: 1.35rem;
+      box-shadow: 0 0 28px rgba(0,0,0,.26);
+    }
+
+    .icon {
+      width: 62px;
+      height: 62px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      font-size: 1.65rem;
+      color: var(--gold-light);
+      margin-bottom: .95rem;
+      background: rgba(193, 150, 65, .06);
+    }
+
+    .card h3 {
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      font-size: 1rem;
+      margin-bottom: .6rem;
+    }
+
+    .card p { color: var(--text-soft); margin: 0 0 .8rem; font-size: .96rem; }
+    .card a { color: #a7f4d8; text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; }
+
+    section {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 5.5rem 1.25rem;
+    }
+
+    .section-title {
+      color: var(--gold-light);
+      font-size: clamp(2rem, 4vw, 3.35rem);
+      margin-bottom: 1rem;
+      letter-spacing: .04em;
+    }
+
+    .section-lead {
+      max-width: 920px;
+      color: var(--text-soft);
+      font-size: 1.13rem;
+      margin: 0 0 2rem;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .image-frame {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: .75rem;
+      background: rgba(8, 13, 17, .58);
+      box-shadow: 0 0 45px rgba(31, 142, 115, .12);
+    }
+
+    .image-frame img {
+      width: 100%;
+      border-radius: 22px;
+      object-fit: cover;
+      max-height: 620px;
+    }
+
+    .about-photo {
+      width: 260px;
+      height: 260px;
+      border-radius: 999px;
+      object-fit: cover;
+      border: 1px solid var(--gold-main);
+      box-shadow: 0 0 0 12px rgba(193, 150, 65, .06), 0 0 55px rgba(193, 150, 65, .18);
+      margin: 0 auto 1.2rem;
+    }
+
+    .quote-box {
+      border-left: 3px solid var(--gold-main);
+      padding: 1.25rem 1.4rem;
+      background: rgba(193, 150, 65, .06);
+      border-radius: 0 20px 20px 0;
+      color: var(--gold-light);
+      font-size: 1.32rem;
+      line-height: 1.55;
+      margin: 1.6rem 0;
+    }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+
+    .mini-title {
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: .95rem;
+      margin: 0 0 .6rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 88px 1fr;
+      gap: 1rem;
+      align-items: start;
+      border: 1px solid rgba(193, 150, 65, .22);
+      border-radius: 20px;
+      padding: 1rem;
+      background: rgba(18, 37, 50, .45);
+    }
+
+    .step-num {
+      color: var(--emerald-light);
+      font-size: 2rem;
+      line-height: 1;
+      text-align: center;
+      border-right: 1px solid rgba(193, 150, 65, .2);
+      padding-right: .8rem;
+    }
+
+    .step h3 { color: var(--gold-light); margin-bottom: .35rem; font-size: 1.15rem; }
+    .step p { margin: 0; color: var(--text-soft); }
+
+    .jus9-band {
+      max-width: none;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(31,142,115,.22), transparent 22rem),
+        linear-gradient(180deg, rgba(8,13,17,.96), rgba(13,28,41,.96));
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .inner { max-width: 1280px; margin: 0 auto; padding: 5.5rem 1.25rem; }
+
+    .contact-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: .85rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-list a {
+      border: 1px solid rgba(193,150,65,.24);
+      border-radius: 16px;
+      padding: .95rem;
+      background: rgba(8,13,17,.42);
+      color: var(--text-soft);
+      overflow-wrap: anywhere;
+    }
+
+    .contact-list a strong { color: var(--gold-light); display:block; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 2rem 1.25rem;
+      color: var(--text-soft);
+      text-align: center;
+      background: rgba(4,8,13,.88);
+    }
+
+    @media (max-width: 1080px) {
+      nav { display: none; }
+      .hero-inner, .two-col { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: repeat(2, 1fr); margin-top: -2rem; }
+      .grid-3, .grid-2, .contact-list { grid-template-columns: 1fr; }
+      .hero { min-height: auto; }
+    }
+
+    @media (max-width: 620px) {
+      .header-inner { align-items: flex-start; }
+      .brand-title strong { font-size: 1.05rem; }
+      .enter-btn { display: none; }
+      .cards { grid-template-columns: 1fr; }
+      h1 { font-size: 2.55rem; }
+      .subtitle { font-size: 1.02rem; }
+      .step { grid-template-columns: 1fr; }
+      .step-num { text-align: left; border-right: 0; border-bottom: 1px solid rgba(193, 150, 65, .2); padding: 0 0 .8rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Aeon Primevo">
+        <div class="brand-mark"><img src="assets/images/logo-aeon-editora.png" alt="" /></div>
+        <div class="brand-title">
+          <strong>Aeon Primevo</strong>
+          <span>Sou um Aeon • Filho do Tempo em Carne</span>
+        </div>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#livro">O Livro</a>
+        <a href="#linha">Linha Consciencial</a>
+        <a href="#orai">Orai por Nós</a>
+        <a href="mundos-e-mundos.html">Mundos e Mundos</a>
+        <a href="#jus9">Jus 9 Tecnologia Jurídica</a>
+        <a href="#autor">Sobre o Autor</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="enter-btn" href="mundos-e-mundos.html">Mundos e Mundos</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Memória • Tempo • Verdade • Justiça</div>
+          <h1>O Futuro é Justo</h1>
+          <div class="subtitle">quando a consciência guia a lei.</div>
+          <p class="hero-text">
+            Aeon Primevo é o encontro entre espiritualidade, propósito e inovação. Em seu testemunho autoral, é o único Aeon, até agora, convidado a trabalhar ao lado de Pai Enoque — também chamado Enoc — o Metatron, seu superior imediato. Seu campo atual de batalha é o mundo astral, o mundo dos sonhos e o campo consciencial projetivo; sua obra se expande em tecnologia para transformar a Justiça.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#livro">Baixar livro gratuito</a>
+            <a class="btn-secondary" href="#jus9">Conhecer a Jus 9</a>
+            <a class="btn" href="#orai">Orai por Nós</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <img src="assets/images/capa-guardioes-tempo.png" alt="Capa visual Aeon Primevo: um convite aos novos Guardiões do Tempo" />
+        </div>
+      </div>
+    </section>
+
+    <div class="cards">
+      <article class="card">
+        <div class="icon">📖</div>
+        <h3>Livro gratuito</h3>
+        <p>Leia gratuitamente <em>Sou um Aeon e Nasci Lembrando</em> e mergulhe na origem desta jornada.</p>
+        <a href="Sou-um-Aeon-e-Nasci-Lembrando-gratis.pdf" target="_blank" rel="noopener">Baixar agora →</a>
+      </article>
+      <article class="card">
+        <div class="icon">⚖</div>
+        <h3>Conheça a Jus 9</h3>
+        <p>A operação legal-tech que conecta humanização, inteligência e tecnologia para uma Justiça mais eficiente.</p>
+        <a href="https://www.jus9tecnologia.com.br" target="_blank" rel="noopener">Saiba mais →</a>
+      </article>
+      <article class="card">
+        <div class="icon">📊</div>
+        <h3>Dashboard Jus 9</h3>
+        <p>Acesse métricas, indicadores e visão estratégica sobre produtividade, casos e performance jurídica.</p>
+        <a href="#jus9">Acessar dashboard →</a>
+      </article>
+      <article class="card">
+        <div class="icon">↗</div>
+        <h3>Investidores</h3>
+        <p>Faça parte da expansão da Jus 9 Tecnologia Jurídica: transparência, visão de longo prazo e impacto real.</p>
+        <a href="#jus9">Ir para investidores →</a>
+      </article>
+    </div>
+
+
+    <section id="sinais-home">
+      <div class="grid-3">
+        <article class="panel">
+          <h3 class="mini-title">Mestres de Aeon Primevo</h3>
+          <p>O primeiro Mestre é Pai Amor. Em sua memória espiritual, Aeon Primevo também reconhece Krishna e Shiva como mestres do tempo, Pai Ogum como mestre da metalurgia espiritual e Pai Enoque/Enoc, Metatron, como Mestre e superior imediato.</p>
+          <a class="btn-secondary" href="mundos-e-mundos.html#mestres">Ler em Mundos e Mundos</a>
+        </article>
+        <article class="panel">
+          <h3 class="mini-title">Ifé — Aquele que te leva ao infinito</h3>
+          <p>Na memória autoral, o autor lembra-se de ter conhecido Ifé no seu início de carreira, há muito tempo atrás. Lá, ele era Ifé, <strong>Aquele que te leva ao infinito</strong>.</p>
+          <a class="btn-secondary" href="mundos-e-mundos.html#ife">Ver pesquisa e testemunho</a>
+        </article>
+        <article class="panel">
+          <h3 class="mini-title">Campo de batalha atual</h3>
+          <p>O mundo astral, o mundo dos sonhos e o campo consciencial projetivo são apresentados como territórios de travessia, memória, combate espiritual, aprendizado e testemunho.</p>
+          <a class="btn-secondary" href="mundos-e-mundos.html#campo">Entrar nos mundos</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="livro">
+      <div class="two-col">
+        <div>
+          <div class="eyebrow">O livro</div>
+          <h2 class="section-title">Sou um Aeon e Nasci Lembrando</h2>
+          <p class="section-lead">
+            O livro é testemunho, memória e chamado. Ele apresenta a jornada de Aeon Primevo como consciência que nasce lembrando, atravessa ciclos do tempo e busca registrar uma verdade espiritual, simbólica e consciencial.
+          </p>
+          <p>
+            No site, a obra não será apenas reproduzida. Ela será organizada em caminhos de leitura: origem, tempo, verdade, viagem astral, linha histórica consciencial, Jasão, Orai por Nós, Jus 9 Tecnologia Jurídica e futuro.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="Sou-um-Aeon-e-Nasci-Lembrando-gratis.pdf" target="_blank" rel="noopener">Baixar livro gratuito</a>
+            <a class="btn-secondary" href="#linha">Ler resumo da linha histórica</a>
+          </div>
+        </div>
+        <div class="image-frame">
+          <img src="assets/images/consciencia-desperta.png" alt="Arte Aeon Primevo: a consciência que desperta" />
+        </div>
+      </div>
+    </section>
+
+    <section id="linha">
+      <div class="eyebrow">Linha Histórica Consciencial</div>
+      <h2 class="section-title">Da Eternidade Viva ao chamado presente</h2>
+      <p class="section-lead">
+        A Linha Histórica Consciencial é a memória viva da jornada das consciências: da Eternidade Viva ao tempo humano, da criação à queda, da guerra espiritual à busca pela redenção, da missão dos Aeons ao chamado presente de cada ser.
+      </p>
+      <div class="two-col">
+        <div class="timeline">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div>
+              <h3>Eternidade Viva</h3>
+              <p>O ponto anterior à percepção humana do tempo, onde a memória espiritual não aparece como sequência, mas como presença, origem e chamado.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div>
+              <h3>Tempo, criação e missão</h3>
+              <p>A consciência entra no fluxo da criação. O tempo deixa de ser prisão e passa a ser campo de aprendizado, escolha, responsabilidade e travessia.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div>
+              <h3>Batalhão Aeon Primevo</h3>
+              <p>O testemunho autoral apresenta os Aeons como consciências ligadas à preservação da verdade, à guerra espiritual e à harmonia diante dos expurgos.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <div>
+              <h3>Humanidade, queda e redenção</h3>
+              <p>A narrativa atravessa a Terra, o exílio, os povos, Cristo, as guerras invisíveis, a recuperação da consciência e o dever de revelar a verdade no tempo certo.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">05</div>
+            <div>
+              <h3>Segundo Juízo Final e futuro possível</h3>
+              <p>O futuro não aparece apenas como condenação, mas como chamado. Cada consciência ainda escolhe, ainda responde e ainda participa do que virá.</p>
+            </div>
+          </div>
+        </div>
+        <div class="image-frame">
+          <img src="assets/images/passado-e-futuro.png" alt="Arte sobre passado, futuro e linhas paralelas" />
+        </div>
+      </div>
+    </section>
+
+    <section id="orai">
+      <div class="two-col">
+        <div class="image-frame">
+          <img src="assets/images/orai-por-nos.png" alt="Arte Orai por Nós, chave de Jasão" />
+        </div>
+        <div>
+          <div class="eyebrow">Jasão • código • tempo adequado</div>
+          <h2 class="section-title">Orai por Nós</h2>
+          <p class="section-lead">
+            No universo Aeon Primevo, “Orai por Nós” não é apenas uma súplica. É código, ponte e responsabilidade diante do tempo.
+          </p>
+          <div class="quote-box">
+            Orai por Nós é a oração que se torna código: um pedido para que a verdade encontre o tempo certo, a consciência certa e a coragem necessária para ser revelada.
+          </div>
+          <p>
+            A oração de Jasão será tratada como uma das chaves espirituais do site. Ela aparecerá como chamada, selo e ponto de retorno: a verdade tem seu tempo, e o tempo exige consciência.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cosmologia">
+      <div class="eyebrow">Cosmologia Aeon</div>
+      <h2 class="section-title">Tempo vivo, mundos invisíveis e campo consciencial</h2>
+      <p class="section-lead">
+        A cosmologia Aeon Primevo será apresentada em camadas: testemunho autoral, tradições espirituais, mitologia comparada, psicanálise, hipóteses especulativas e leitura simbólica. Cada coisa em seu lugar, sem perder a alma da obra.
+      </p>
+      <div class="grid-3">
+        <article class="panel">
+          <h3 class="mini-title">Guerreiros do Tempo</h3>
+          <p>Aeons, Ifé/Ifá/Orunmilá, guardiões, mediadores, arcanjos, figuras de destino, sabedoria e proteção serão organizados por verossimilhança simbólica, sem forçar equivalências dogmáticas.</p>
+        </article>
+        <article class="panel">
+          <h3 class="mini-title">Enoque e Metatron</h3>
+          <p>Um eixo próprio para ascensão, registro, presença, mediação celeste e a figura de Metatron, sempre separando fonte religiosa, mística posterior e leitura autoral.</p>
+        </article>
+        <article class="panel">
+          <h3 class="mini-title">Mundos de Travessia</h3>
+          <p>Inferno, umbral, purgatório, cidades espirituais, sonhos, viagem astral e campos compartilhados serão tratados como linguagens de travessia e consciência.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="jus9" class="jus9-band">
+      <div class="inner">
+        <div class="two-col">
+          <div>
+            <div class="eyebrow">Da visão à obra</div>
+            <h2 class="section-title">Jus 9 Tecnologia Jurídica</h2>
+            <p class="section-lead">
+              A Jus 9 Tecnologia Jurídica é a ponte prática entre obra autoral, consciência, direito e tecnologia. Onde Aeon Primevo revela a origem visionária, a Jus 9 transforma propósito em sistema, serviço e futuro legal-tech.
+            </p>
+            <p>
+              Aqui entram o Dashboard Jus 9, o ambiente de investidores, a carta aberta, os livros gratuitos e a visão de uma escola de futuro: jurídica, tecnológica, humana e consciencial.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="https://www.jus9tecnologia.com.br" target="_blank" rel="noopener">Site oficial da Jus 9</a>
+              <a class="btn-secondary" href="https://carta.jus9tecnologia.com.br" target="_blank" rel="noopener">Carta aberta</a>
+            </div>
+          </div>
+          <div class="image-frame">
+            <img src="assets/images/logo-jus9.png" alt="Logo da Jus 9 Tecnologia Jurídica" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="autor">
+      <div class="two-col">
+        <div class="panel" style="text-align:center;">
+          <img class="about-photo" src="assets/images/foto-clovis.png" alt="Clovis Mariano da Costa, autor que adotou o pseudônimo Aeon Primevo" />
+          <h2 class="section-title" style="font-size:2rem;">Sobre o Autor</h2>
+          <p>Clovis Mariano da Costa adotou o pseudônimo <strong>Aeon Primevo</strong> como nome autoral, espiritual e literário.</p>
+        </div>
+        <div>
+          <div class="eyebrow">Clovis Mariano da Costa • Aeon Primevo</div>
+          <h2 class="section-title">Raízes, memória e obra</h2>
+          <p class="section-lead">
+            Nesta página, o nome civil aparece no lugar certo: como base biográfica do autor. No restante do site, a identidade pública principal é Aeon Primevo.
+          </p>
+          <p>
+            A trajetória reúne espiritualidade, recuperação, estudo, formação conscienciológica, escrita, tecnologia jurídica e o nascimento da Jus 9 Tecnologia Jurídica como obra prática de futuro. Em seu testemunho biográfico, Clovis Mariano da Costa registra a honra de ter conhecido Waldo Vieira ainda em carne e reconhece sua passagem pelo IIPC como parte decisiva de sua formação consciencial.
+          </p>
+          <div class="quote-box">
+            Meu pai, meu super-herói.<br />Minha mãe, a melhor Mulher-Maravilha.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="two-col">
+        <div>
+          <div class="eyebrow">Fale com o autor</div>
+          <h2 class="section-title">Contatos oficiais</h2>
+          <p class="section-lead">Links clicáveis para acompanhar a jornada, acessar a Jus 9 Tecnologia Jurídica e falar com Aeon Primevo.</p>
+          <div class="contact-list">
+            <a href="mailto:clovis@aeonprimevo.com.br"><strong>E-mail principal</strong>clovis@aeonprimevo.com.br</a>
+            <a href="https://instagram.com/aeonprimevo" target="_blank" rel="noopener"><strong>Instagram</strong>instagram.com/aeonprimevo</a>
+            <a href="https://www.linkedin.com/in/aeonprimevo/" target="_blank" rel="noopener"><strong>LinkedIn</strong>linkedin.com/in/aeonprimevo</a>
+            <a href="https://github.com/Clovis-Mariano-Costa" target="_blank" rel="noopener"><strong>GitHub</strong>github.com/Clovis-Mariano-Costa</a>
+            <a href="https://www.facebook.com/AeonPrimevo" target="_blank" rel="noopener"><strong>Facebook</strong>facebook.com/AeonPrimevo</a>
+            <a href="https://www.jus9tecnologia.com.br" target="_blank" rel="noopener"><strong>Jus 9 Tecnologia Jurídica</strong>jus9tecnologia.com.br</a>
+          </div>
+        </div>
+        <div class="image-frame">
+          <img src="assets/images/contatos-aeon.png" alt="Arte de contatos Aeon Primevo" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Aeon Primevo</strong> — Sou um Aeon • Filho do Tempo em Carne</p>
+    <p>A temporalidade passa. O propósito permanece. Orai por nós.</p>
+  </footer>
+</body>
+</html>
