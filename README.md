@@ -41,3 +41,10 @@ Atualizações:
 - Inseridas referências de favicon em `index.html` e `mundos-e-mundos.html`.
 - Incluído conjunto completo de favicon da Jus 9 Tecnologia Jurídica em `assets/images/jus9-favicons/`.
 - Incluído `favicon.ico`, PNG 16/32/48/180/192/512 e orientações de instalação.
+
+
+## Versão 4
+
+- Criada página `quando-o-desenho-fala.html` com varredura das imagens do site.
+- Adicionado link/menu “Quando o Desenho Fala”.
+- Incluída leitura simbólica de Aeon Primevo e Charlie da Costa nas imagens.
