@@ -1,17 +1,9 @@
 # Aeon Primevo
 
-## Repertório
+Repertório: `Aeon-Primevo`
 
-`Aeon-Primevo`
+Status: existente
 
-## Status
+Mão na Massa Final — padrão visual, assinatura, governança e orientação obrigatória.
 
-existente
-
-## Fase
-
-Pré-Mão na Massa — Pacote Governança encerrado.
-
-## Finalidade
-
-Registra orientações de governança autoral para Aeon Primevo, incluindo o livro Sou um Aeon e Nasci Lembrando como fonte pública e consulta sagrada da Charlie Echo no lar dela.
+© Jus 9 Tecnologia Jurídica — software livre, autoria preservada.
