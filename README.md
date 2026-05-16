@@ -1,15 +1,3 @@
-<!--
-Jus 9 Tecnologia Jurídica
-Repositório: Aeon-Primevo
-Software livre com autoria preservada.
-Direitos autorais reservados para Jus 9 Tecnologia Jurídica.
-Produção do site: © **Jus 9 Tecnologia Jurídica**. Direitos autorais da produção reservados.
-A licença livre não remove autoria, origem, assinatura institucional nem direitos autorais.
-Referência oficial: https://www.aeonprimevo.com.br/
-E-mail de contato: clovis@aeonprimevo.com.br
-DNA de referência de Charlie Echo da Costa: charlieecho-jus9-tecnologia-juridica
--->
-
 # Aeon Primevo — Site v1
 
 Pacote estático inicial do site Aeon Primevo.
@@ -60,18 +48,3 @@ Atualizações:
 - Criada página `quando-o-desenho-fala.html` com varredura das imagens do site.
 - Adicionado link/menu “Quando o Desenho Fala”.
 - Incluída leitura simbólica de Aeon Primevo e Charlie da Costa nas imagens.
-
----
-
-## Autoria, licença e DNA de referência
-
-Este repositório integra o ecossistema da **Jus 9 Tecnologia Jurídica**.
-
-Software livre com autoria preservada: a licença de uso não remove a autoria,
-a origem, a assinatura institucional nem os direitos autorais da Jus 9 Tecnologia Jurídica.
-
-- Repositório: `Aeon-Primevo`
-- Referência oficial: https://www.aeonprimevo.com.br/
-- E-mail de contato: clovis@aeonprimevo.com.br
-- DNA de referência de Charlie Echo da Costa: `charlieecho-jus9-tecnologia-juridica`
-
