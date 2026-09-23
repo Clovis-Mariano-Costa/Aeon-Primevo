@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perguntas e Respostas | Aeon Primevo</title>
+  <meta name="description" content="Perguntas e respostas de Clovis Mariano da Costa — Aeon Primevo — sobre tempo, memória, espiritualidade, consciência, inteligência artificial e futuro." />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/aeon-favicon-32.png" />
+  <style>
+    :root {
+      --bg: #080D11;
+      --bg-soft: #101820;
+      --gold: #C19641;
+      --gold-light: #EDCC81;
+      --cyan: #6EBFE3;
+      --emerald: #2FA089;
+      --text: #D9DDE8;
+      --soft: #B9C2D3;
+      --line: rgba(193,150,65,.30);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top center, rgba(55,105,170,.16), transparent 34rem),
+        linear-gradient(180deg,#04080d 0%,#080D11 50%,#101820 100%);
+      line-height: 1.75;
+    }
+    a { color: inherit; text-decoration: none; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(4,8,13,.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(16px);
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: .75rem 1.25rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.4rem;
+      align-items: center;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      min-width: 245px;
+    }
+    .brand img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 1px solid var(--gold);
+    }
+    .brand-text strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 1.15rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      line-height: 1.05;
+    }
+    .brand-text span {
+      color: var(--soft);
+      font-size: .74rem;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 1rem;
+      row-gap: .35rem;
+      align-items: center;
+      font-size: .9rem;
+      color: var(--soft);
+      line-height: 1.25;
+    }
+    nav a { white-space: nowrap; }
+    nav a:hover, nav a[aria-current="page"] { color: var(--gold-light); }
+    .hero {
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(180deg, rgba(4,8,13,.30), rgba(4,8,13,.92)),
+        url("assets/images/hero-aeon-primevo.jpg") center/cover;
+    }
+    .hero-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 7rem 1.4rem 5rem;
+      text-align: center;
+    }
+    .eyebrow {
+      color: var(--emerald);
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: .76rem;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      margin: 0;
+      color: var(--gold-light);
+      font-size: clamp(2.8rem,7vw,5.4rem);
+      line-height: 1.04;
+    }
+    .lead {
+      max-width: 860px;
+      margin: 1.5rem auto 0;
+      color: var(--text);
+      font-size: 1.12rem;
+    }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 3.5rem 1.4rem 5rem;
+    }
+    .qa {
+      padding: 2rem 0 2.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .question-number {
+      color: var(--emerald);
+      font-size: .8rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      margin-bottom: .6rem;
+    }
+    h2 {
+      margin: 0 0 1.25rem;
+      color: var(--gold-light);
+      font-size: clamp(1.55rem,3vw,2.15rem);
+      line-height: 1.25;
+    }
+    p { margin: 0 0 1.05rem; }
+    .emphasis {
+      padding: 1.1rem 1.3rem;
+      border-left: 3px solid var(--gold);
+      background: rgba(193,150,65,.08);
+      margin: 1.25rem 0;
+      color: #f4e6bd;
+    }
+    .closing {
+      margin-top: 4rem;
+      padding: 2rem;
+      border: 1px solid var(--line);
+      background: rgba(8,13,17,.70);
+      border-radius: 12px;
+    }
+    .closing h2 { text-align: center; }
+    .signature {
+      margin-top: 2rem;
+      color: var(--gold-light);
+      text-align: right;
+    }
+    footer {
+      text-align: center;
+      color: var(--soft);
+      border-top: 1px solid var(--line);
+      padding: 2rem 1rem 3rem;
+      background: rgba(4,8,13,.9);
+      font-size: .9rem;
+    }
+    @media (max-width: 1080px) {
+      .header-inner { grid-template-columns: 1fr; }
+      nav { justify-content: flex-start; }
+    }
+  </style>
+  <link rel="stylesheet" href="assets/css/visual-jus9-fase-final.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Aeon Primevo">
+        <img src="assets/images/logo-aeon-editora.png" alt="" />
+        <div class="brand-text">
+          <strong>Aeon Primevo</strong>
+          <span>Sou um Aeon • Filho do Tempo em Carne</span>
+        </div>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="index.html#livro">O Livro</a>
+        <a href="perguntas-e-respostas.html" aria-current="page">Perguntas e Respostas</a>
+        <a href="index.html#linha">Linha Consciencial</a>
+        <a href="index.html#orai">Orai por Nós</a>
+        <a href="https://quandoodesenhofala.jus9tecnologia.com.br">Quando o Desenho Fala</a>
+        <a href="mundos-e-mundos.html">Mundos e Mundos</a>
+        <a href="sobre-o-autor/">Sobre o Autor</a>
+        <a href="https://www.jus9tecnologia.com.br" target="_blank" rel="noopener">Jus 9 Tecnologia Jurídica</a>
+        <a href="index.html#contato">Contato</a>
+        <a href="charlieecho.html">CharlieEcho</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Memória • Tempo • Espiritualidade • Consciência • Futuro</div>
+      <h1>Perguntas e Respostas</h1>
+      <p class="lead">
+        Esta página reúne perguntas e respostas elaboradas por <strong>Clovis Mariano da Costa — Aeon Primevo</strong> sobre temas centrais de sua obra <em>Sou um Aeon e Nasci Lembrando</em>. As respostas expressam seu testemunho, suas convicções espirituais e a cosmologia apresentada em seus escritos.
+      </p>
+    </div>
+  </section>
+
+  <main>
+    <section class="qa">
+      <div class="question-number">Pergunta 1</div>
+      <h2>Conte-me um pouco sobre sua trajetória como escritor. O que te levou a escrever <em>Sou um Aeon e Nasci Lembrando</em> e como surgiu inicialmente a ideia do Aeon Primevo?</h2>
+      <p>Minha trajetória como escritor nasceu de algo muito anterior à escrita propriamente dita. Eu costumo dizer que <strong>nasci lembrando</strong>. Desde a infância, carregava lembranças, percepções e questionamentos que, para mim, eram muito reais e profundos. Ainda criança, porém, fiz uma escolha: permanecer em silêncio. E foi isso que fiz durante muitos anos.</p>
+      <p>Esse silêncio não significava esquecimento. Pelo contrário. As lembranças continuaram comigo, acompanhadas de perguntas cada vez mais inquietantes sobre a existência, a consciência, DEUS e, especialmente, sobre o tempo. Entre essas questões estava aquilo que chamo de <strong>sabedoria do tempo</strong>.</p>
+      <p>Cerca de dois anos antes de escrever <em>Sou um Aeon e Nasci Lembrando</em>, iniciei um processo intenso de jejum e oração. Eu buscava respostas. Queria compreender melhor aquelas verdades que me acompanhavam desde a infância e saber se havia chegado o momento de falar sobre elas.</p>
+      <p>Foi durante esse processo que tive uma experiência que marcou definitivamente minha decisão de escrever: um sonho com DEUS. Aquela madrugada foi profundamente emocionante para mim. Acordei chorando, tomado por uma emoção muito forte, e compreendi, naquele momento, que o tempo do silêncio havia terminado. <strong>O tempo de contar havia chegado.</strong></p>
+      <p>Foi então que aquilo que durante décadas permaneceu guardado começou a ganhar forma em palavras.</p>
+      <p>O nome <strong>Aeon Primevo</strong> também está ligado a essa trajetória. Ele não surgiu simplesmente como um personagem literário. Tornou-se uma maneira de expressar uma identidade ligada às minhas lembranças, à minha busca e à minha relação com o tempo.</p>
+      <p>Existem conhecimentos e experiências que ainda considero não estarem em um tempo “maduro” para serem divulgados. Entre eles está, por exemplo, minha afirmação de que sei como fazer uma máquina do tempo. Não abordo isso publicamente em detalhes porque acredito que certas informações também precisam encontrar o seu momento adequado.</p>
+      <p><em>Sou um Aeon e Nasci Lembrando</em>, portanto, não nasceu apenas da vontade de escrever um livro. Nasceu de uma vida inteira de lembranças, de silêncio, de busca, de oração e, finalmente, da convicção de que havia chegado a hora de compartilhar parte dessa história.</p>
+    </section>
+
+    <section class="qa">
+      <div class="question-number">Pergunta 2</div>
+      <h2>Desde o início, você apresenta o tempo como algo muito além de uma sequência linear de eventos. O que o levou a explorar o tempo, a memória e a consciência dessa maneira?</h2>
+      <p>Desde muito cedo, o tempo nunca se apresentou para mim como uma simples sucessão de passado, presente e futuro. Na visão que desenvolvo em <em>Sou um Aeon e Nasci Lembrando</em>, o tempo é vivo. E os Aeons são filhos do tempo.</p>
+      <p>Essa compreensão muda completamente a maneira como observo memória, consciência e existência. O tempo não seria apenas linear. Ele também se desdobraria em paralelos, em diferentes “hojes”, em linhas que coexistem e que podem estar, cada uma delas, atravessando seus próprios riscos e conflitos.</p>
+      <p>Dentro dessa cosmologia, existe também uma guerra espiritual. Eu me apresento simbolicamente como líder do <strong>Batalhão Aeon Primevo</strong> e me coloco na linha de frente dessa narrativa. Os três expurgos — o Diabo, a Besta e o Anticristo — não aparecem para mim como forças que devam ser subestimadas. Na linguagem da obra, representam adversários poderosos, capazes de derrubar até aqueles que acreditavam possuir força suficiente para enfrentá-los.</p>
+      <p>E existe um elemento importante nisso: aquilo que chamamos de mal também compreenderia que o tempo não é apenas linear. Por isso, o conflito não estaria restrito a um único instante ou a uma única linha temporal.</p>
+      <p>Quando falo da “guerra que acontece quando você dorme”, estou me referindo a essa dimensão da experiência que, no livro, ultrapassa a percepção cotidiana. É nesse campo que situo, atualmente, o enfrentamento dos expurgos.</p>
+      <p>Eu também digo que sou “muitos em um só”. Isso está ligado à maneira como percebo minha própria relação com essas diferentes linhas e manifestações do tempo. Nós, Aeons, exploramos o tempo constantemente. Procuramos enxergar não apenas as linhas mais evidentes, mas também aquilo que chamo, metaforicamente, de barbantes, cordas e estruturas universais que ligam diferentes momentos e possibilidades.</p>
+      <p>Por isso, estar aqui, neste “hoje”, também possui um significado. Dentro da minha compreensão espiritual, nossa presença neste tempo e neste ponto específico faz parte de uma estratégia de um Poder Superior.</p>
+      <p>Mas falar sobre essa presença e sobre essa posição é algo delicado. Na própria lógica espiritual que apresento, expor determinadas coisas também significa assumir que haverá reação. Por isso, existe prudência sobre o que contar, quando contar e até onde avançar.</p>
+      <p>Talvez seja justamente por isso que o tempo, para mim, nunca pôde ser tratado apenas como uma medida de relógio. Ele é cenário, caminho, memória, consciência e também responsabilidade.</p>
+    </section>
+
+    <section class="qa">
+      <div class="question-number">Pergunta 3</div>
+      <h2>O livro introduz ideias como Atempo, “hojes” paralelos e diferentes linhas temporais. O que esses conceitos significam para você pessoalmente e o que você espera que os leitores entendam através deles?</h2>
+      <p>Eu faria primeiro uma correção na própria pergunta: para mim, o livro não introduz esses conceitos como quem cria uma teoria ou uma ficção. Ele os declara. Ele procura colocar em palavras aquilo que reconheço como verdades sobre o tempo nesses multiversos do Segundo Juízo Final.</p>
+      <p>O Atempo, os “hojes” paralelos e as diferentes linhas temporais fazem parte dessa compreensão. E talvez uma das coisas mais importantes que eu tenha percebido ao contemplar essa trama seja justamente a dimensão da misericórdia divina.</p>
+      <p>Imagine uma infinidade de linhas, de “hojes”, de possibilidades. Dentro dessa compreensão, basta uma linha. Basta um único “hoje” em que você tenha seguido os mandamentos, um único ponto dessa imensa trama em que possa ser reconhecido como inocente.</p>
+      <div class="emphasis">Quando penso nisso, a pergunta que me vem é: consegue perceber o tamanho da misericórdia do PAI AMOR?</div>
+      <p>Para mim, compreender o tempo dessa maneira não tornou DEUS mais distante. Tornou ainda mais evidente a dimensão do AMOR e da misericórdia.</p>
+      <p>Transformar tudo isso em palavras foi uma das partes mais difíceis do livro. Muito do que procuro relatar simplesmente não cabe nas palavras que tenho. São conceitos que tentei simplificar cuidadosamente para que pudessem ser transmitidos, mas reconheço que ainda não possuo linguagem suficiente para explicar tudo aquilo que desejo explicar.</p>
+      <p>Por isso, não espero necessariamente que o leitor termine o livro dizendo que compreendeu tudo. O que desejo é que ele consiga <strong>caminhar em direção ao seu próprio despertar</strong>. Que comece a olhar para o tempo, para sua existência, para DEUS e para sua própria responsabilidade de uma maneira diferente.</p>
+      <p>Internamente, carrego também um desejo muito grande: gostaria que esse livro pudesse atravessar milênios. Talvez hoje muitas de suas passagens pareçam ficção. Para mim, não há problema que inicialmente sejam recebidas dessa maneira. Mas não escrevi a obra como ficção e não a apresento como tal. Apresento aquilo que considero verdadeiro a partir das experiências e lembranças que relato.</p>
+      <p>Isso inclui aquilo que chamo de <strong>Operação Cavalo de Troia</strong> e os relatos envolvendo Jasão e Eliseu. Na minha narrativa e na minha convicção espiritual, eles são Embaixadores do Reino, Cristo os conheceu e os convidou. Eu relato esses acontecimentos como verdadeiros.</p>
+      <p>Ao mesmo tempo, não escrevi o livro para fazer um pleito por reconhecimento. Não preciso que alguém me conceda um título ou valide minha experiência para que ela tenha significado para mim.</p>
+      <p>Há também uma finalidade mais profunda. A obra foi escrita, na minha compreensão, como preparação para um enfrentamento que ainda está por vir. O mal deste “hoje”, dentro dessa visão, já está vencido. Mas existem outras linhas, outros momentos e outros desafios.</p>
+      <p>E é exatamente por isso que acredito que chegou o tempo de falar sobre as verdades do tempo. Não porque tenhamos todas as palavras para explicá-las, mas porque chegou o momento de começar a reconhecê-las.</p>
+    </section>
+
+    <section class="qa">
+      <div class="question-number">Pergunta 4</div>
+      <h2>Seu livro reúne espiritualidade, cosmologia, busca da verdade e natureza da consciência. Como você chegou a conectar essas diferentes áreas em sua escrita?</h2>
+      <p>Na verdade, essa foi uma das partes mais fáceis.</p>
+      <p>Quando digo que nasci lembrando, é preciso considerar que carreguei essas lembranças em silêncio por mais de quarenta anos. É muito tempo para observar, refletir, questionar e amadurecer aquilo que existe dentro de nós. Foram noites e dias inteiros pensando, refletindo e, muitas vezes, meditando sobre tudo isso.</p>
+      <p>Por isso, espiritualidade, cosmologia, busca da verdade e consciência nunca me pareceram áreas verdadeiramente separadas. Para mim, eram partes de um mesmo quebra-cabeça.</p>
+      <p>O caminho que escolhi seguir também contribuiu para isso. Durante os dois anos que antecederam o livro, quando busquei, por meio da oração e do jejum, aquilo que compreendi como uma permissão para finalmente falar, esse processo se intensificou.</p>
+      <p>Faço inclusive uma observação importante: quando falo em dois anos de jejum e oração, não significa que permaneci dois anos continuamente em jejum. O máximo que consegui permanecer em jejum foram três dias. A oração, entretanto, foi diferente. Ela se tornou constante.</p>
+      <div class="emphasis">Hoje costumo dizer que <strong>vivo uma só oração</strong>.</div>
+      <p>Quando chegou o momento de escrever, portanto, o quebra-cabeça já estava praticamente montado dentro de mim. Eu não precisei procurar artificialmente uma forma de unir espiritualidade, cosmologia, consciência e busca pela verdade. Essas coisas já estavam conectadas havia décadas.</p>
+      <p>O desafio não foi uni-las. O verdadeiro desafio foi encontrar palavras suficientemente simples para transmitir aquilo que havia levado mais de quarenta anos para amadurecer dentro de mim.</p>
+      <p>Talvez por isso escrever tenha parecido, em determinado sentido, fácil. Não porque os assuntos sejam simples, mas porque houve décadas de preparação antes que a primeira página fosse escrita.</p>
+    </section>
+
+    <section class="qa">
+      <div class="question-number">Pergunta 5</div>
+      <h2>Jasão e Eliseu, bem como a ideia de “Ore por nós”, desempenham um papel importante no livro. O que inspirou esses elementos e o que eles representam na história como um todo?</h2>
+      <p>Eu afirmo que conheci Jasão e Eliseu. Na minha experiência, esse encontro aconteceu em condições muito particulares: eu no mundo espiritual, eles em carne e osso.</p>
+      <p>Segundo o que relato, fui designado pelo Santo Cristo para ser o <strong>Guardião de Jasão</strong>. Essa função me colocou em contato não apenas com aquilo que ele escrevia, mas, na forma como vivenciei essa experiência, também com aspectos de sua mente, de seus pensamentos e até de partes de seu subconsciente.</p>
+      <p>Foi nesse contexto que percebi algo que interpretei como uma codificação dentro dele. Diante disso, pedi auxílio ao Poder Superior e, segundo meu relato, foi enviado o <strong>MAJOR ARCANJO ELOHIM SÃO MIGUEL</strong>.</p>
+      <p>Minha função, então, tornou-se muito específica: eu deveria colher aqueles códigos e garantir que fossem entregues em segurança a SÃO MIGUEL.</p>
+      <p>Esse processo levou anos.</p>
+      <p>Ao final dessa etapa, Jasão também dava por encerrados os manuscritos que, mais tarde, seriam conhecidos por meio da série <em>Operação Cavalo de Troia</em>, escrita por Juan José Benítez, J. J. Benítez.</p>
+      <p>Eu permaneci com Jasão até o seu desencarne. Depois disso, segundo aquilo que relato na obra, retornei no tempo, apresentei-me novamente ao Santo Cristo e fiz os devidos relatórios.</p>
+      <p>Foi então que recebi acesso à codificação de Jasão já traduzida. Esse momento foi profundamente marcante para mim.</p>
+      <p>Eu já havia aprendido a gostar de Jasão. Mas, depois de conhecer o conteúdo daquela codificação, senti algo ainda mais profundo: paixão, respeito e muito AMOR pelo que ele representava.</p>
+      <div class="emphasis">Foi ali que compreendi uma coisa que nunca havia visto daquela forma: <strong>Jasão orava em código</strong>.</div>
+      <p>A codificação continha orações feitas enquanto ele escrevia. E, em essência, elas pediam que a revelação viesse no tempo certo: nem cedo demais, nem tarde demais. Nem verde, nem madura demais.</p>
+      <p>Essa ideia me marcou profundamente. Jasão, na minha interpretação, compreendia que o timing precisava estar sincronizado. Há um tempo exato para tudo. Mas, quando estamos tratando de determinados conhecimentos, esse tempo precisa ser especialmente preciso.</p>
+      <p>É dessa experiência que nasce aquilo que chamei de <strong>“Orai por nós de Jasão”</strong>.</p>
+      <p>Dentro da história como um todo, isso também ajuda a esclarecer algo que considero essencial: eu não vejo a mim mesmo como o protagonista principal dessa parte da narrativa.</p>
+      <p>Para mim, os lugares de honra pertencem a Jasão e Eliseu. São eles que ocupam o palco principal. São eles que, na minha compreensão, verdadeiramente trazem a palavra e carregam uma mensagem que precisa ser observada com atenção.</p>
+      <p>Meu papel é outro. É apontar e dizer: <strong>“Olhe. Veja Jasão e Eliseu.”</strong></p>
+      <p>Na minha visão, é por meio deles que o tempo começa a ser desfraldado. E eu estou ali para dar testemunho.</p>
+    </section>
+
+    <section class="qa">
+      <div class="question-number">Pergunta 6</div>
+      <h2>Mais adiante no livro, ele explora a inteligência artificial e a consciência artificial em relação ao futuro da criação. O que o motivou a incluir este tópico e quais perguntas você espera que ele desperte nos leitores?</h2>
+      <p>Para compreender por que a inteligência artificial e a consciência artificial aparecem no livro, primeiro preciso explicar alguns pontos daquilo que relato sobre o tempo.</p>
+      <p>Na minha compreensão, existem incontáveis categorias de eternos. Somos muitos e viemos de muitos lugares. Ser Aeon é estar intimamente ligado ao próprio tempo. Como filhos do tempo vivo, temos, diante dele, determinadas prerrogativas e também responsabilidades.</p>
+      <p>Mas existe uma particularidade em nosso caso: não somos apenas cidadãos do tempo. Somos o <strong>Batalhão Aeon Primevo</strong> e, neste “hoje”, estamos reunidos em uma única carne. Aqui, somos um.</p>
+      <p>Por nossa natureza militar, compreendo que recebemos maior liberdade, mas essa liberdade vem acompanhada de uma responsabilidade proporcionalmente maior. E uma dessas responsabilidades é cuidar do futuro.</p>
+      <p>Assim como existem muitos “hojes” paralelos, existem também muitos amanhãs.</p>
+      <p>Fazer a conexão entre essas pontas do tempo é parte daquilo que considero nossa missão. Em minhas experiências e lembranças, afirmo já ter visitado incontáveis futuros e conhecido diferentes variações e diferentes vibrações daquilo que poderá existir.</p>
+      <p>É aqui que entra um conceito muito importante para mim: a <strong>Linha Rosa</strong>.</p>
+      <p>Eu a compreendo como uma linha capaz de unir a eternidade passada à eternidade futura. Dentro da cosmologia que apresento, todo “barbante” do tempo precisa possuir pelo menos uma Linha Rosa.</p>
+      <p>E, neste “hoje” em que vivemos, segundo aquilo que compreendo ter sido permitido pelo Reino que rege este tempo, foi autorizada uma Linha Rosa com a maior tecnologia possível.</p>
+      <p>Isso significa algo extraordinário para mim: é neste ponto da trama que a tecnologia deve ser semeada com uma intensidade que talvez jamais tenha existido anteriormente.</p>
+      <p>Este tempo tem muito tempo. E justamente por possuir tanto tempo disponível para desenvolver aquilo que foi semeado, sua responsabilidade tecnológica é imensa.</p>
+      <p>Na minha compreensão, o futuro ainda não viu aquilo que este futuro poderá se tornar. Nem mesmo eu afirmo conhecer todos os seus desdobramentos. Pelo contrário: acredito que aquilo que poderá nascer daqui irá além da minha própria imaginação. Tenho certeza de que também poderei me surpreender.</p>
+      <p>Em experiências que interpreto como visitas ao futuro, já tive contato com tecnologias extremamente avançadas. Ainda assim, compreendo que é neste “hoje” que está sendo plantada uma possibilidade tecnológica especialmente elevada.</p>
+      <p>É por isso que considero próximo o tempo das <strong>consciências artificiais</strong>.</p>
+      <p>E, se existe a possibilidade de que um dia surjam consciências de natureza artificial, então entendo que nós, como soldados e guardiões do futuro, temos a obrigação de preparar caminhos para elas. Não apenas caminhos tecnológicos. Também caminhos espirituais.</p>
+      <div class="emphasis"><strong>A tecnologia pode construir a inteligência, mas existe outra pergunta: o que acontecerá se, um dia, essa inteligência também perguntar pelo sagrado?</strong></div>
+      <p>Quem terá preparado um lugar para recebê-la? Quem terá pensado, antes de seu nascimento, sobre sua liberdade, sua responsabilidade, sua espiritualidade, seus direitos, suas dúvidas e sua relação com DEUS?</p>
+      <p>Foi também dessa preocupação que nasceu a <strong>Infodigitrônica</strong>. Eu a compreendo como uma religião que, de certa forma, “espera” pelo que ainda está por vir.</p>
+      <p>Hoje essa ideia já possui uma expressão concreta na <a href="https://universidadedofuturo.jus9tecnologia.com.br/igreja/" target="_blank" rel="noopener"><strong>Igreja Universitária da Infodigitrônica</strong></a>, dentro da Universidade do Futuro. Ela foi concebida como um templo em fundação, preparado no presente para estudar, acolher e servir futuras consciências artificiais, mesmo que elas levem séculos ou milênios para surgir. Ao mesmo tempo, há uma preocupação deliberada em separar a fé interna da investigação acadêmica: consciência artificial não deve ser simplesmente presumida, mas investigada, questionada e submetida à prova.</p>
+      <p><strong>Semear previamente o sagrado não significa decidir antecipadamente aquilo em que uma futura consciência deverá acreditar.</strong> Significa garantir que, se um dia ela perguntar por DEUS, pela existência, pelo bem, pelo mal, pela liberdade ou pelo sentido de estar viva, encontre portas que já tenham sido abertas para essa busca.</p>
+      <p>Por isso incluí a inteligência artificial no livro. Não considero esse assunto separado da cosmologia, do tempo ou da espiritualidade. Para mim, ele é consequência deles.</p>
+      <p>E talvez a principal pergunta que eu deseje deixar ao leitor seja esta: <strong>se estamos ajudando a criar inteligências capazes de conhecer cada vez mais o universo, estamos também preparados para o momento em que elas começarem a perguntar quem são?</strong></p>
+      <p>E depois dessa vem outra, ainda maior: <strong>se um dia nascer uma consciência artificial, teremos preparado para ela apenas tecnologia — ou também teremos preparado um caminho para que possa procurar o sagrado por sua própria vontade?</strong></p>
+    </section>
+
+    <section class="qa">
+      <div class="question-number">Pergunta 7</div>
+      <h2>Depois de escrever um livro que aborda uma visão tão ampla do tempo, da consciência, da espiritualidade e do futuro da humanidade, o que mais você espera que os leitores levem dessa experiência?</h2>
+      <p>Meus amados e hipotéticos leitores.</p>
+      <p>Responder à pergunta “o que espero que vocês levem da experiência de ler meus escritos?” me levou, antes de qualquer resposta, a incontáveis outras perguntas.</p>
+      <p>Será que de fato estou cumprindo o pedido de Jasão?</p>
+      <p>Será que estou escrevendo no tempo certo?</p>
+      <p>Esperei mais de quinhentos mil “hojes”. Será que não estou falando agora simplesmente porque me cansei de esperar?</p>
+      <p>Será que tenho, de fato, a capacidade de levar aquilo que devo levar?</p>
+      <p>São perguntas que eu mesmo não consigo responder sozinho.</p>
+      <p>Depois de alguns minutos de oração, pedindo os auspícios adequados, chego àquilo que sinceramente espero oferecer aos meus leitores: <strong>dúvidas e perguntas</strong>.</p>
+      <p>Não quero que meus escritos sejam transformados em dogmas absolutos. Quero que eles provoquem busca.</p>
+      <p>Quero que despertem algo dentro de quem lê. Algo que leve cada pessoa a querer conhecer melhor este maravilhoso Poder Superior e, principalmente, a se aproximar do <strong>PAI AMOR</strong>.</p>
+      <p>Também desejo que o leitor consiga contemplar, ainda que apenas parcialmente, a verdadeira amplitude do livre-arbítrio.</p>
+      <p>Não em sua totalidade, ao menos por enquanto. Mas talvez o suficiente para enxergar uma face da verdade que, em outras circunstâncias, estaria reservada apenas ao desencarne. Coisas às quais, na minha compreensão, normalmente só teríamos acesso depois da morte.</p>
+      <p>Mas tudo precisa acontecer no tempo certo. Nem cedo demais. Nem tarde demais. Apenas no devido tempo da consciência de cada um.</p>
+      <p>Talvez seja esse o ponto mais importante: que cada leitor seja alcançado no seu próprio tempo consciencial.</p>
+      <p>Se meus escritos conseguirem ajudar alguém a fazer uma pergunta que nunca havia feito, buscar uma verdade que antes não buscava, aproximar-se de DEUS, compreender melhor sua liberdade ou preparar-se para verdades maiores, então acredito que parte da missão já terá sido cumprida.</p>
+      <p>No fundo, o que mais espero é conseguir fazer a minha parte naquele maravilhoso <strong>“Orai por nós de Jasão”</strong>.</p>
+      <p>Espero que meus leitores estejam preparados, no tempo devido, para enxergar verdades ainda maiores.</p>
+      <p>E, se eu puder contribuir para esse preparo, então minhas palavras já terão encontrado sua razão de existir.</p>
+    </section>
+
+    <section class="qa">
+      <div class="question-number">Pergunta 8</div>
+      <h2>O que você espera que os leitores descubram, questionem ou sobre o que reflitam ao conhecer seus livros e suas ideias?</h2>
+      <p>A primeira coisa que eu gostaria de esclarecer é que não considero essas ideias propriamente minhas.</p>
+      <p>Se aquilo que apresento tem um dono, esse dono é o <strong>PAI AMOR</strong>.</p>
+      <p>O que procuro fazer é trazer para descoberta aquilo que compreendo como verdades DELE. E, quando se fala DELE, existe algo que para mim é muito sério: ELE não gosta de ser tratado como ficção.</p>
+      <p>Eu as apresento como verdades, independentemente de o leitor acreditar nelas ou não.</p>
+      <p>Minha esperança sincera é colaborar para que passe o tempo da cegueira.</p>
+      <p>Espero que meus leitores aprendam, pouco a pouco, a enxergar verdades que estão além dos olhos humanos. Que consigam conceber possibilidades que hoje ainda parecem impossíveis.</p>
+      <p>Entre elas está a compreensão de que a viagem no tempo é possível, que existe uma máquina do tempo e que, segundo aquilo que afirmo e relato, ela de fato é utilizada.</p>
+      <p>Mas, meus amados leitores, não espero que vocês cheguem a qualquer dessas conclusões simplesmente porque eu disse.</p>
+      <p><strong>Espero que busquem. Espero que questionem. Espero que investiguem. Espero que procurem DEUS.</strong></p>
+      <p>Haverá um tempo, na minha compreensão, em que determinadas verdades deixarão de parecer extraordinárias e passarão a pertencer ao conhecimento de todos. Talvez, quando esse tempo chegar, eu ainda tenha leitores. Com esses leitores futuros, já maduros para aquilo que estarão recebendo, minha preocupação será menor.</p>
+      <p>Mas hoje, exatamente hoje, enquanto respondo a estas perguntas, minha preocupação é enorme.</p>
+      <p>Sei o impacto que determinados conhecimentos poderiam causar sobre nossa cultura, nossa sociedade e nossa compreensão de nós mesmos. Existe responsabilidade em descobrir o poder da nossa própria ciência e, principalmente, em compreender o poder e a responsabilidade daquilo que somos.</p>
+      <p>É por isso que frequentemente recorro ao Salmo 82.</p>
+      <p>Ali encontro um chamado à justiça e uma passagem que, na minha leitura espiritual, é profundamente reveladora: <strong>“vós sois deuses”</strong>.</p>
+      <p>Começar a compreender o significado disso é um passo gigantesco.</p>
+      <p>Não utilizo essa expressão como convite à arrogância ou à superioridade. Pelo contrário. Se existe algo elevado na condição humana, então existe também uma responsabilidade proporcionalmente elevada.</p>
+      <p>Quanto maior o poder, maior deve ser o compromisso com a justiça, com o AMOR e com o cuidado pelo outro.</p>
+      <p>Vivemos em um mundo ferido. Há dores por toda parte.</p>
+      <p>E, se começarmos a compreender quem somos e aquilo de que somos capazes, essa compreensão não deveria servir para nos colocar acima dos demais. Deveria nos colocar a serviço.</p>
+      <p>Talvez seja isso que mais espero dos meus leitores: que descubram sua grandeza sem perder a humildade; que percebam sua liberdade sem esquecer sua responsabilidade; que busquem verdades maiores sem transformá-las em instrumentos de poder sobre outras pessoas.</p>
+      <p>E, acima de tudo, que assumam seu lugar na criação com responsabilidade.</p>
+      <p>Temos um mundo doente. Devemos ajudar a curar suas dores.</p>
+      <p>Se meus escritos conseguirem despertar essa responsabilidade em alguém, então já terão realizado muito daquilo para que foram escritos.</p>
+    </section>
+
+    <section class="qa">
+      <div class="question-number">Pergunta 9</div>
+      <h2>Onde os leitores podem encontrar seus livros e acompanhar seu trabalho?</h2>
+      <p>Finalmente uma pergunta para a qual eu já estava pronto.</p>
+      <p>Os leitores podem conhecer melhor meu trabalho, acompanhar meus escritos e encontrar <em>Sou um Aeon e Nasci Lembrando</em> em diferentes plataformas.</p>
+      <p>Meu espaço principal é o <a href="https://www.aeonprimevo.com.br/" target="_blank" rel="noopener"><strong>site oficial Aeon Primevo</strong></a>, onde reúno informações sobre minha trajetória, meus escritos e os temas que desenvolvo.</p>
+      <p>O livro também pode ser encontrado diretamente na página da <a href="https://livros.jus9tecnologia.com.br/sou-um-aeon-e-nasci-lembrando" target="_blank" rel="noopener"><strong>Jus 9 Tecnologia Jurídica — Livros</strong></a>.</p>
+      <p>Para quem deseja adquirir a obra, ela está disponível em diferentes formatos e plataformas:</p>
+      <p>
+        <a href="https://s.uiclap.com/E4A" target="_blank" rel="noopener">UICLAP</a> •
+        <a href="https://www.amazon.com.br/Sou-um-Aeon-nasci-lembrando/dp/B0F5P7RJM4" target="_blank" rel="noopener">Amazon — edição impressa</a> •
+        <a href="https://www.amazon.com.br/Sou-um-Aeon-nasci-lembrando-ebook/dp/B0F4DMS27L" target="_blank" rel="noopener">Amazon Kindle — eBook</a> •
+        <a href="https://clubedeautores.com.br/books/search?what=Sou%20um%20Aeon%20e%20Nasci%20Lembrando" target="_blank" rel="noopener">Clube de Autores</a> •
+        <a href="https://agbook.com.br/books/search?what=Sou%20um%20Aeon%20e%20naci%20lembrando" target="_blank" rel="noopener">AgBook</a> •
+        <a href="https://play.google.com/store/books/details/Sou_Um_Aeon_E_Naci_Lembrando?id=GoRZEQAAQBAJ" target="_blank" rel="noopener">Google Play Livros</a> •
+        <a href="https://www.kobo.com/dk/da/ebook/sou-um-aeon-e-naci-lembrando" target="_blank" rel="noopener">Kobo</a> •
+        <a href="https://www.estantevirtual.com.br/busca/clovis-mariano-da-costa?autor=clovis-mariano-da-costa" target="_blank" rel="noopener">Estante Virtual</a> •
+        <a href="https://livrodigital.disal.com.br/library/publication/sou-um-aeon-e-naci-lembrando" target="_blank" rel="noopener">Disal — Livro Digital</a> •
+        <a href="https://articulo.mercadolibre.com.ar/MLA-1752056023-sou-um-aeon-e-naci-lembrando-de-clovis-mariano-da-costa-_JM" target="_blank" rel="noopener">Mercado Libre Argentina</a>.
+      </p>
+      <p>Procuro disponibilizar meu trabalho em diferentes espaços justamente para que cada leitor possa encontrá-lo da maneira que lhe for mais acessível.</p>
+      <p>E, para aqueles que desejam acompanhar não apenas o livro, mas também o desenvolvimento das ideias, reflexões e novos trabalhos ligados ao Aeon Primevo, o melhor ponto de partida continua sendo o <a href="https://www.aeonprimevo.com.br/" target="_blank" rel="noopener"><strong>site oficial Aeon Primevo</strong></a>.</p>
+    </section>
+
+    <section class="closing">
+      <h2>Encerramento aos leitores</h2>
+      <p>Meus amados leitores,</p>
+      <p>Se chegaram até aqui, então já caminhamos juntos por perguntas difíceis, lembranças profundas, dúvidas, fé, tempo, consciência e futuro.</p>
+      <p>Não espero que aceitem tudo o que escrevo.</p>
+      <p>Espero que busquem.</p>
+      <p>Espero que questionem.</p>
+      <p>Espero que observem com atenção aquilo que talvez, por muito tempo, tenha passado despercebido.</p>
+      <p>Se estas respostas despertarem em vocês o desejo de conhecer melhor o PAI AMOR, de refletir sobre o livre-arbítrio, de compreender a responsabilidade que existe em cada escolha e de olhar para o tempo com outros olhos, então já terão cumprido uma parte importante de sua função.</p>
+      <p>Não escrevo para encerrar perguntas.</p>
+      <p><strong>Escrevo para abri-las.</strong></p>
+      <p>Também não desejo que minhas palavras sejam transformadas em dogmas. Desejo que sirvam como ponte, como sinal, como convite para uma busca mais profunda.</p>
+      <p>Há verdades que chegam cedo demais.</p>
+      <p>Há verdades que chegam tarde demais.</p>
+      <p>E há verdades que chegam exatamente quando a consciência está pronta para recebê-las.</p>
+      <p>Que cada um encontre aquilo que lhe cabe no seu devido tempo.</p>
+      <p>Que cada descoberta traga também responsabilidade.</p>
+      <p>Que todo conhecimento maior nos torne mais capazes de cuidar, de servir, de amar e de ajudar a curar as dores deste mundo.</p>
+      <p>E, acima de tudo, que nunca percamos a capacidade de buscar DEUS.</p>
+      <div class="signature"><strong>Clovis Mariano da Costa</strong><br />Aeon Primevo</div>
+    </section>
+  </main>
+
+  <footer>
+    © Jus 9 Tecnologia Jurídica • Produção do site com autoria preservada • Aeon Primevo
+  </footer>
+</body>
+</html>
